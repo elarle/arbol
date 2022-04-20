@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+body {
+margin: 0px;
+padding: 0px;
+background: #191919;
+color: white;
+font-family: 'Roboto Mono', monospace;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #292929;
+}
+.main {
+  margin-left: 100px;
+  background-image: url('/src/bg/renders/plcloud.png');
+  border: 2px solid #404040;
+  border-radius: 8px;
+  float: left;
+  width: 60%;
+  height: 480px;
+  padding: 0 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.menu{
+}
+.right {
+  background-color: #252525;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+.logo{
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.settings{
+  float: right;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+  .main{
+    margin-left: 0em;
+  }
+  .content_1 h1{
+    margin-top: 4em;
+    margin-bottom: 4em;
+    font-size: 2em;
+  }
+  .content_1 img{
+    content: url('/src/bg/renders/plcloud.png');
+  }
+}
+::-webkit-scrollbar-thumb{
+  background: ;
+  border-radius: 10px;
+}
+::-webkit-scrollbar{
+  width: 0px;
+  margin: 0px;
+}
+.title{
+  padding: 0px;
+  background: linear-gradient(94.23deg,#5374fa 12.41%,#fd9179 42.55%,#ff6969 69.95%,#ff3385 90%);
+  border-bottom: 4px solid #ffad33;
+}
+.foot { display: inline-block; line-height: 70px; vertical-align: top }
+
+.img { display: inline-block;  }
+
+a:link{
+  text-decoration: none;
+}
+.content_1{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content_1 h1{
+  font-size: 8em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.content_2{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.content_2_d{
+  margin: 1em;
+  margin-bottom: 2.5em;
+}
+.content_2_d h2{
+  font-size: 4em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.content_2_d_center h2{
+  justify-content: center;
+  font-size: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.content_2_d_center{
+  justify-content: center;
+  font-size: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.content_final{
+  margin-left: 3em;
+}
